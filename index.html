@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="./scripts/main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Focus Timer 2.0</title>
+</head>
+<body>
+  <div id="page" class="flex">
+    <div id="timer" class="flex">
+      <section id="relogio">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+
+      <section id="controls">
+        <button class="ph ph-play-circle" data-action="play">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button class="ph ph-stop-circle" data-action="reset">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+        <button class="ph ph-plus-circle" data-action="aumentar">
+          <span class="sr-only">Aumentar contador</span>
+        </button>
+        <button class="ph ph-minus-circle" data-action="diminuir">
+          <span class="sr-only">Diminuir contador</span>
+        </button>
+      </section>
+
+    </div>
+    <section id="sounds">
+      <div class="cards" data-action="floresta">
+        <i class="ph ph-tree" data-action="floresta"></i>
+      </div>
+      <div class="cards" data-action="rain">
+        <i class="ph ph-cloud-rain" data-action="rain"></i>
+      </div>
+      <div class="cards" data-action="lofi">
+        <i class="ph ph-coffee" data-action="lofi"></i>
+      </div>
+      <div class="cards" data-action="fire">
+        <i class="ph ph-flame" data-action="fire"></i>
+      </div>
+    </section>
+  </div> 
+</body>
+</html>
